@@ -1,0 +1,12 @@
+import matplotlib.pyplot as plt
+
+plt.figure(figsize=(10,5))
+
+plt.plot(df['DATE'], df['CONFIRMED'])
+
+plt.xlabel("DATE")
+plt.ylabel("CONFIRMED Cases")
+plt.title("COVID-19 Confirmed Cases Trend")
+
+plt.xticks(rotation=45)
+plt.show()
